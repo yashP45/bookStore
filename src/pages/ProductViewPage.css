@@ -1,0 +1,36 @@
+/* ProductViewPage.css */
+.product-view {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    padding: 20px;
+  }
+  
+  .product-image {
+    margin-right: 20px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+  }
+  .delete-btn {
+ background-color: red;
+  }
+  
+  .product-details h2 {
+    margin-top: 0;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+  }
+  
+  .product-details div {
+    font-style: italic;
+  }
+  
