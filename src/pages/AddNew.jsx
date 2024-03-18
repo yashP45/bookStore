@@ -10,7 +10,7 @@ const AddNew = () => {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post('http://127.0.0.1:8000/api/v1/book/createBook', data);
+      await axios.post('https://myshoppro.onrender.com/api/v1/book/createBook', data);
   
       navigate("/home")
     } catch (error) {

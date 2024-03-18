@@ -20,7 +20,7 @@ const ProductViewPage = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/v1/book/getbook/${id}`);
+        const response = await axios.get(`https://myshoppro.onrender.com/api/v1/book/getbook/${id}`);
         setProduct(response.data);
       } catch (error) {
         console.error('Error fetching product:', error);
@@ -31,7 +31,7 @@ const ProductViewPage = () => {
   }, [id]);
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/v1/book/delete/${id}`);
+      await axios.delete(`https://myshoppro.onrender.com/api/v1/book/delete/${id}`);
       
     } catch (error) {
       console.error('Error deleting product:', error);
